@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>GPT-3 Smart Writer</title>
+
+    <link rel="canonical" href="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='stylesheets/style.css') }}">
+</head>
+
+<body class="text-center">
+    <div class="container-fluid">
+        <img class="mb-4" src="https://www.4fivelabs.com/images/4Five_logo.png" alt="" height="72">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <form class="form-signin col-md-6" action="/ajax" method="post">
+                    <textarea name="subject" class="form-control mb-4" rows="10" placeholder="Subject" required autofocus>{{textarea}}</textarea>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Go GPT-3</button>
+                    <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
+                </form>
+            </div>
+          </div>
+    </div>
+</body>
+
+</html>
